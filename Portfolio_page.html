@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chiedozie David Nnam | System Administration & AI Engineering</title>
+<meta name="description" content="Portfolio of Chiedozie David Nnam — IT professional specializing in system administration, cloud infrastructure, and AI engineering.">
+<style>
+  :root {
+    --navy: #0f2540;
+    --blue: #1e5f9e;
+    --light: #f5f7fa;
+    --text: #22303c;
+    --muted: #5a6b7b;
+    --accent: #e8b04b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: var(--text);
+    line-height: 1.65;
+    background: #fff;
+  }
+  .container { max-width: 1000px; margin: 0 auto; padding: 0 24px; }
+
+  /* HERO */
+  header {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--blue) 100%);
+    color: #fff;
+    padding: 80px 0 60px;
+    text-align: center;
+  }
+  header h1 { font-size: 2.6rem; letter-spacing: 0.5px; margin-bottom: 10px; }
+  header .tagline { font-size: 1.15rem; color: #cfe0f0; margin-bottom: 24px; }
+  header .contact-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 0.95rem;
+    border-bottom: 1px solid rgba(255,255,255,0.4);
+    padding-bottom: 2px;
+  }
+  header .contact-links a:hover { border-color: var(--accent); color: var(--accent); }
+  .btn {
+    display: inline-block;
+    margin-top: 28px;
+    background: var(--accent);
+    color: var(--navy);
+    padding: 12px 28px;
+    border-radius: 6px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: transform .15s ease, box-shadow .15s ease;
+  }
+  .btn:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(0,0,0,0.25); }
+
+  /* SECTIONS */
+  section { padding: 64px 0; }
+  section:nth-child(even) { background: var(--light); }
+  h2 {
+    font-size: 1.7rem;
+    color: var(--navy);
+    margin-bottom: 32px;
+    position: relative;
+    padding-bottom: 12px;
+  }
+  h2::after {
+    content: "";
+    position: absolute;
+    left: 0; bottom: 0;
+    width: 56px; height: 4px;
+    background: var(--accent);
+    border-radius: 2px;
+  }
+
+  /* ABOUT */
+  .about p { max-width: 760px; font-size: 1.05rem; color: var(--muted); }
+
+  /* PRINCIPLES */
+  .principles-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 22px; }
+  .principle-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 26px;
+    box-shadow: 0 3px 14px rgba(15,37,64,0.08);
+    border-top: 4px solid var(--blue);
+  }
+  .principle-card h3 { color: var(--navy); font-size: 1.15rem; margin-bottom: 10px; }
+  .principle-card p { color: var(--muted); font-size: 0.95rem; }
+
+  /* PROJECTS */
+  .project {
+    background: #fff;
+    border-radius: 10px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 3px 14px rgba(15,37,64,0.08);
+  }
+  .project h3 { color: var(--navy); font-size: 1.25rem; margin-bottom: 6px; }
+  .project .role { color: var(--blue); font-weight: 600; font-size: 0.9rem; margin-bottom: 14px; }
+  .project .meta { margin-bottom: 12px; }
+  .project .meta strong { color: var(--navy); font-size: 0.9rem; }
+  .project .meta p { color: var(--muted); font-size: 0.95rem; margin-top: 2px; }
+  .tags { margin-top: 14px; }
+  .tag {
+    display: inline-block;
+    background: #eaf2fa;
+    color: var(--blue);
+    font-size: 0.78rem;
+    font-weight: 600;
+    padding: 4px 11px;
+    border-radius: 20px;
+    margin: 3px 5px 3px 0;
+  }
+
+  /* EXPERIENCE */
+  .job { margin-bottom: 26px; }
+  .job h3 { color: var(--navy); font-size: 1.1rem; }
+  .job .company { color: var(--blue); font-weight: 600; font-size: 0.92rem; }
+  .job .dates { color: var(--muted); font-size: 0.85rem; margin-bottom: 8px; }
+  .job ul { margin-left: 20px; }
+  .job li { color: var(--muted); font-size: 0.95rem; margin-bottom: 6px; }
+
+  /* SKILLS */
+  .skills-group { margin-bottom: 22px; }
+  .skills-group h3 { color: var(--navy); font-size: 1rem; margin-bottom: 10px; }
+  .skills-group .tag { background: var(--navy); color: #fff; }
+
+  /* EDUCATION */
+  .edu { margin-bottom: 22px; }
+  .edu h3 { color: var(--navy); font-size: 1.05rem; }
+  .edu p { color: var(--muted); font-size: 0.93rem; }
+
+  /* FOOTER */
+  footer {
+    background: var(--navy);
+    color: #cfe0f0;
+    text-align: center;
+    padding: 40px 0;
+    font-size: 0.9rem;
+  }
+  footer a { color: var(--accent); text-decoration: none; }
+
+  @media (max-width: 600px) {
+    header h1 { font-size: 1.9rem; }
+    header { padding: 56px 0 44px; }
+    section { padding: 48px 0; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <h1>Chiedozie David Nnam</h1>
+    <p class="tagline">System Administration &amp; AI Engineering</p>
+    <div class="contact-links">
+      <a href="mailto:chiedozied9@gmail.com">Email</a>
+      <a href="https://www.linkedin.com/in/david-nnam/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="tel:+2349052034365">+234 905 203 4365</a>
+    </div>
+    <a class="btn" href="resume.pdf" target="_blank">Download Résumé (PDF)</a>
+  </div>
+</header>
+
+<section class="about">
+  <div class="container">
+    <h2>About Me</h2>
+    <p>
+      I am an Information Technology student at Ensign College (BYU–Pathway Worldwide), specializing in
+      system administration and AI engineering. My work sits at the intersection of secure infrastructure
+      and responsible artificial intelligence — building the systems AI runs on, and ensuring those systems
+      serve people well. I hold a 4.2 GPA, the IT Professional Certificate, and the Future AWS AI Engineer
+      Nanodegree from Udacity. I approach technical work as a steward and a servant-leader: every server I
+      maintain and every model I deploy ultimately touches a real person.
+    </p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2>Guiding Principles</h2>
+    <div class="principles-grid">
+      <div class="principle-card">
+        <h3>Stewardship</h3>
+        <p>I am a steward, not an owner, of what has been entrusted to me. Admin privileges, user data, and AI capabilities are held in trust — I am accountable for how I use them.</p>
+      </div>
+      <div class="principle-card">
+        <h3>Integrity</h3>
+        <p>I do what is right, especially in the unseen work. Logs, patches, and model training are acts of honesty, not hidden shortcuts.</p>
+      </div>
+      <div class="principle-card">
+        <h3>Service</h3>
+        <p>Technical work is an act of love for my neighbor. Every system I build or maintain serves real people, and I treat it as discipleship.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2>Technical Projects</h2>
+
+    <div class="project">
+      <h3>Hardware Maintenance Protocol</h3>
+      <p class="role">Technical Support Assistant — Pi &amp; Beads Academy</p>
+      <div class="meta"><strong>Challenge:</strong><p>Frequent unplanned device downtime was disrupting business operations.</p></div>
+      <div class="meta"><strong>My Role:</strong><p>Designed and deployed a scheduled inspection and repair protocol across all company devices.</p></div>
+      <div class="meta"><strong>Outcomes:</strong><p>Extended equipment lifespan by 40%, reduced unplanned downtime, and enabled accurate procurement through a real-time inventory system.</p></div>
+      <div class="tags"><span class="tag">Hardware Diagnostics</span><span class="tag">Preventive Maintenance</span><span class="tag">Inventory Systems</span></div>
+    </div>
+
+    <div class="project">
+      <h3>IT &amp; STEM Curriculum Facilitation</h3>
+      <p class="role">IT &amp; STEM Facilitator — Divine Pattern High School</p>
+      <div class="meta"><strong>Challenge:</strong><p>200+ students with little to no prior exposure to programming or computational thinking.</p></div>
+      <div class="meta"><strong>My Role:</strong><p>Designed and taught a Scratch and LEGO robotics curriculum, plus a pioneer Abacus arithmetic program.</p></div>
+      <div class="meta"><strong>Outcomes:</strong><p>80% of students demonstrated programming proficiency; arithmetic speed and accuracy improved by 25%.</p></div>
+      <div class="tags"><span class="tag">Python / Scratch</span><span class="tag">Curriculum Design</span><span class="tag">Mentorship</span></div>
+    </div>
+
+    <div class="project">
+      <h3>AI &amp; Cloud Infrastructure Foundations</h3>
+      <p class="role">Self-Directed Technical Development — Udacity / Ensign College</p>
+      <div class="meta"><strong>Challenge:</strong><p>Transitioning from hardware support into cloud infrastructure and AI requires a shift from physical systems to abstract, code-driven environments.</p></div>
+      <div class="meta"><strong>My Role:</strong><p>Completed the Future AWS AI Engineer Nanodegree and coursework in cloud administration, Linux, and cybersecurity.</p></div>
+      <div class="meta"><strong>Outcomes:</strong><p>Hands-on experience with SageMaker, Rekognition, Comprehend, data pipelines, and ML model deployment on AWS.</p></div>
+      <div class="tags"><span class="tag">AWS</span><span class="tag">SageMaker</span><span class="tag">Python</span><span class="tag">Linux</span><span class="tag">ML Deployment</span></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2>Professional Experience</h2>
+
+    <div class="job">
+      <h3>Technical Support Assistant</h3>
+      <p class="company">Pi &amp; Beads Academy Nigeria Ltd.</p>
+      <p class="dates">Jan. 2024 – Present | Benin City, Nigeria</p>
+      <ul>
+        <li>Resolved 100+ IT support tickets (hardware, software, network) with a 90% satisfaction rate.</li>
+        <li>Deployed a hardware maintenance protocol that extended device lifespan by 40%.</li>
+        <li>Configured and deployed systems and user accounts, boosting team efficiency by 30%.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <h3>Bookkeeping Intern</h3>
+      <p class="company">BookSmarts Accounting LLC / BYU–Pathway Worldwide</p>
+      <p class="dates">Jan. 2026 – Mar. 2026 | Remote</p>
+      <ul>
+        <li>Reconciled financial records for multiple clients using QuickBooks Online (L1 &amp; L2) and Intuit Bookkeeping.</li>
+        <li>Collaborated with a distributed remote team to meet weekly deliverable deadlines.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <h3>IT &amp; STEM Facilitator</h3>
+      <p class="company">Divine Pattern High School</p>
+      <p class="dates">Jul. 2023 – Dec. 2024 | Benin City, Nigeria</p>
+      <ul>
+        <li>Introduced coding to 200+ students using Scratch and LEGO robotics; 80% achieved proficiency.</li>
+        <li>Designed an Abacus curriculum that improved arithmetic speed and accuracy by 25%.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <h3>Full-Time Missionary &amp; District Leader</h3>
+      <p class="company">Church of Jesus Christ of Latter-day Saints — Nigeria Benin City Mission</p>
+      <p class="dates">Jun. 2021 – Jun. 2023 | Nigeria</p>
+      <ul>
+        <li>Led outreach programs across multiple districts, increasing community engagement by 10%.</li>
+        <li>Trained and mentored team members in communication and conflict resolution, improving effectiveness by 20%.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2>Skills &amp; Competencies</h2>
+
+    <div class="skills-group">
+      <h3>IT Support</h3>
+      <span class="tag">Hardware Troubleshooting</span><span class="tag">PC Configuration</span><span class="tag">Help Desk Ticketing</span><span class="tag">User Account Management</span><span class="tag">Device Lifecycle Management</span>
+    </div>
+
+    <div class="skills-group">
+      <h3>Cloud &amp; AI</h3>
+      <span class="tag">AWS</span><span class="tag">SageMaker</span><span class="tag">Rekognition</span><span class="tag">Comprehend</span><span class="tag">Azure Fundamentals</span><span class="tag">ML Model Deployment</span><span class="tag">Data Pipelines</span>
+    </div>
+
+    <div class="skills-group">
+      <h3>Programming &amp; Data</h3>
+      <span class="tag">Python</span><span class="tag">SQL</span><span class="tag">Database Design</span><span class="tag">Linux Administration</span><span class="tag">Network Configuration</span>
+    </div>
+
+    <div class="skills-group">
+      <h3>Security &amp; Networking</h3>
+      <span class="tag">Cybersecurity Foundations</span><span class="tag">NIST Frameworks</span><span class="tag">Network Design</span><span class="tag">Linux Fundamentals</span>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2>Education &amp; Certifications</h2>
+
+    <div class="edu">
+      <h3>B.A.S. Information Technology — Ensign College (BYU–Pathway Worldwide)</h3>
+      <p>Expected May 2027 | Cumulative GPA: 4.2 | IT Professional Certificate awarded Dec. 2025</p>
+    </div>
+
+    <div class="edu">
+      <h3>Future AWS AI Engineer Nanodegree — Udacity</h3>
+      <p>Nov. 2025 | ML fundamentals, AWS AI/ML services, data pipelines, model deployment</p>
+    </div>
+
+    <div class="edu">
+      <h3>TestOut PC Hardware Technician Certification</h3>
+      <p>Apr. 2024</p>
+    </div>
+
+    <div class="edu">
+      <h3>QuickBooks Online ProAdvisor — Level 1 &amp; 2 | Intuit Bookkeeping Certification</h3>
+      <p>Feb. 2026</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>Chiedozie David Nnam &mdash; System Administration &amp; AI Engineering</p>
+    <p><a href="mailto:chiedozied9@gmail.com">chiedozied9@gmail.com</a> &nbsp;|&nbsp; <a href="https://www.linkedin.com/in/david-nnam/" target="_blank" rel="noopener">LinkedIn</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
