@@ -1,0 +1,990 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spiritual Progression Portfolio | Chiedozie David Nnam</title>
+    <meta
+      name="description"
+      content="Spiritual Progression Portfolio — guiding principles, collected materials, and reflective practice of Chiedozie David Nnam."
+    />
+    <style>
+      :root {
+        --navy: #0f2540;
+        --blue: #1e5f9e;
+        --light: #f5f7fa;
+        --text: #22303c;
+        --muted: #4d5f70;
+        --accent: #b8791a;
+        --accent-soft: #e8b04b;
+        --border: #e1e8ef;
+        --green: #2e7d4f;
+        --red: #a33a3a;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+          Arial, sans-serif;
+        color: var(--text);
+        line-height: 1.65;
+        background: #fff;
+      }
+      .container {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 0 24px;
+      }
+      a:focus-visible {
+        outline: 3px solid var(--blue);
+        outline-offset: 2px;
+      }
+
+      nav {
+        position: sticky;
+        top: 0;
+        background: rgba(255, 255, 255, 0.98);
+        border-bottom: 1px solid var(--border);
+        z-index: 100;
+      }
+      nav .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 14px 24px;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+      nav .brand {
+        font-weight: 700;
+        color: var(--navy);
+      }
+      nav ul {
+        list-style: none;
+        display: flex;
+        gap: 18px;
+        flex-wrap: wrap;
+      }
+      nav ul a {
+        text-decoration: none;
+        color: var(--muted);
+        font-size: 0.85rem;
+        font-weight: 500;
+      }
+      nav ul a:hover {
+        color: var(--blue);
+      }
+
+      header {
+        background: linear-gradient(135deg, var(--navy) 0%, #2d5a8a 100%);
+        color: #fff;
+        padding: 64px 0 50px;
+        text-align: center;
+      }
+      header h1 {
+        font-size: 2.1rem;
+        margin-bottom: 10px;
+      }
+      header p {
+        color: #cfe0f0;
+        font-size: 1.05rem;
+        max-width: 640px;
+        margin: 0 auto;
+      }
+
+      section {
+        padding: 56px 0;
+        scroll-margin-top: 70px;
+      }
+      section:nth-child(even) {
+        background: var(--light);
+      }
+      h2 {
+        font-size: 1.55rem;
+        color: var(--navy);
+        margin-bottom: 28px;
+        position: relative;
+        padding-bottom: 12px;
+      }
+      h2::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 56px;
+        height: 4px;
+        background: var(--accent-soft);
+        border-radius: 2px;
+      }
+      h3.subhead {
+        color: var(--navy);
+        font-size: 1.1rem;
+        margin: 28px 0 12px;
+      }
+      p.lede {
+        color: var(--muted);
+        font-size: 1.03rem;
+        max-width: 800px;
+        margin-bottom: 16px;
+      }
+
+      .principle {
+        background: #fff;
+        border-radius: 10px;
+        padding: 28px;
+        margin-bottom: 22px;
+        box-shadow: 0 3px 14px rgba(15, 37, 64, 0.08);
+        border-left: 5px solid var(--blue);
+      }
+      .principle h3 {
+        color: var(--navy);
+        font-size: 1.2rem;
+        margin-bottom: 8px;
+      }
+      .principle .scripture {
+        color: var(--accent);
+        font-weight: 600;
+        font-size: 0.9rem;
+        margin-bottom: 12px;
+      }
+      .principle p {
+        color: var(--muted);
+        font-size: 0.96rem;
+        margin-bottom: 10px;
+      }
+      .principle .practice {
+        background: #f0f6fb;
+        padding: 12px 16px;
+        border-radius: 6px;
+        font-size: 0.92rem;
+        color: var(--text);
+      }
+
+      .material {
+        background: #fff;
+        border-radius: 10px;
+        padding: 22px 26px;
+        margin-bottom: 18px;
+        box-shadow: 0 3px 14px rgba(15, 37, 64, 0.08);
+      }
+      .material h4 {
+        color: var(--navy);
+        font-size: 1.02rem;
+        margin-bottom: 6px;
+      }
+      .material .type {
+        display: inline-block;
+        font-size: 0.72rem;
+        text-transform: uppercase;
+        letter-spacing: 0.6px;
+        font-weight: 700;
+        color: #fff;
+        background: var(--blue);
+        padding: 3px 9px;
+        border-radius: 12px;
+        margin-bottom: 10px;
+      }
+      .material .type.talk {
+        background: #6b4c9a;
+      }
+      .material .type.exp {
+        background: var(--green);
+      }
+      .material .type.insight {
+        background: var(--accent);
+      }
+      .material p {
+        color: var(--muted);
+        font-size: 0.94rem;
+      }
+      .material .why {
+        margin-top: 10px;
+        padding-top: 10px;
+        border-top: 1px dashed var(--border);
+        font-size: 0.92rem;
+      }
+
+      .map-center {
+        background: var(--navy);
+        color: #fff;
+        text-align: center;
+        padding: 22px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        font-weight: 600;
+        font-size: 1.05rem;
+      }
+      .map-grid {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      }
+      .map-card {
+        background: #fff;
+        border-radius: 10px;
+        padding: 22px;
+        box-shadow: 0 3px 14px rgba(15, 37, 64, 0.08);
+        border-top: 4px solid var(--accent-soft);
+      }
+      .map-card h3 {
+        color: var(--navy);
+        font-size: 1.02rem;
+        margin-bottom: 10px;
+      }
+      .map-card ul {
+        margin-left: 18px;
+      }
+      .map-card li {
+        color: var(--muted);
+        font-size: 0.92rem;
+        margin-bottom: 5px;
+      }
+
+      .warn-grid {
+        display: grid;
+        gap: 18px;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      }
+      .warn {
+        background: #fff;
+        border-radius: 10px;
+        padding: 22px;
+        box-shadow: 0 3px 14px rgba(15, 37, 64, 0.08);
+        border-top: 4px solid var(--red);
+      }
+      .warn h3 {
+        color: var(--navy);
+        font-size: 1rem;
+        margin-bottom: 8px;
+      }
+      .warn p {
+        color: var(--muted);
+        font-size: 0.92rem;
+      }
+      .realign {
+        background: #eaf6ee;
+        border-left: 4px solid var(--green);
+        padding: 20px 24px;
+        border-radius: 6px;
+        margin-top: 22px;
+      }
+      .realign h3 {
+        color: var(--navy);
+        font-size: 1rem;
+        margin-bottom: 10px;
+      }
+      .realign ul {
+        margin-left: 20px;
+      }
+      .realign li {
+        color: var(--text);
+        font-size: 0.93rem;
+        margin-bottom: 6px;
+      }
+
+      .table-wrap {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        background: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 3px 14px rgba(15, 37, 64, 0.08);
+        font-size: 0.88rem;
+        min-width: 560px;
+      }
+      th {
+        background: var(--navy);
+        color: #fff;
+        text-align: left;
+        padding: 12px 16px;
+        font-size: 0.76rem;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+      td {
+        padding: 12px 16px;
+        border-bottom: 1px solid var(--border);
+        color: var(--muted);
+        vertical-align: top;
+      }
+      td:first-child {
+        color: var(--text);
+        font-weight: 600;
+      }
+
+      .finding {
+        background: #fff;
+        padding: 22px 26px;
+        border-radius: 10px;
+        box-shadow: 0 3px 14px rgba(15, 37, 64, 0.08);
+        margin-bottom: 18px;
+      }
+      .finding h3 {
+        color: var(--navy);
+        font-size: 1.02rem;
+        margin-bottom: 10px;
+      }
+      .finding ul {
+        margin-left: 20px;
+      }
+      .finding li {
+        color: var(--muted);
+        font-size: 0.93rem;
+        margin-bottom: 6px;
+      }
+      .finding.working {
+        border-top: 4px solid var(--green);
+      }
+      .finding.enhance {
+        border-top: 4px solid var(--accent-soft);
+      }
+
+      .refs p {
+        color: var(--muted);
+        font-size: 0.88rem;
+        margin-bottom: 12px;
+        padding-left: 36px;
+        text-indent: -36px;
+        line-height: 1.6;
+      }
+      .refs a {
+        color: var(--blue);
+      }
+
+      footer {
+        background: var(--navy);
+        color: #cfe0f0;
+        text-align: center;
+        padding: 36px 0;
+        font-size: 0.88rem;
+      }
+      footer a {
+        color: var(--accent-soft);
+        text-decoration: none;
+      }
+
+      @media (max-width: 600px) {
+        header h1 {
+          font-size: 1.6rem;
+        }
+        header {
+          padding: 48px 0 38px;
+        }
+        section {
+          padding: 44px 0;
+        }
+        nav ul {
+          gap: 12px;
+        }
+        nav ul a {
+          font-size: 0.78rem;
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav aria-label="Main navigation">
+      <div class="container">
+        <span class="brand">Spiritual Progression Portfolio</span>
+        <ul>
+          <li><a href="#principles">Principles</a></li>
+          <li><a href="#materials">Materials</a></li>
+          <li><a href="#map">Reflection Map</a></li>
+          <li><a href="#nearmiss">Near-Miss Log</a></li>
+          <li><a href="#review">Review</a></li>
+          <li><a href="index.html">Professional Portfolio</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <header>
+      <div class="container">
+        <h1>Spiritual Progression Portfolio</h1>
+        <p>Chiedozie David Nnam</p>
+        <p>
+          This is a record of how three principles of discipleship have shaped
+          my growth as a technologist, and data scientist in the course of
+          completing IT 497.
+        </p>
+      </div>
+    </header>
+
+    <section id="principles">
+      <div class="container">
+        <h2>The Three Cornerstone Principles</h2>
+
+        <div class="principle">
+          <h3>1. Stewardship — "I am a steward, not an owner."</h3>
+          <p class="scripture">Mosiah 2:17 · Doctrine and Covenants 58:26–28</p>
+          <p>
+            As a system administrator, I hold admin privileges and access to
+            other people's data. As an AI engineer, I will shape how models are
+            trained and used. This principle reframes both roles: I do not own
+            the systems, data, or capabilities entrusted to me — I am
+            accountable for how I use them. Stewardship is not passive
+            custodianship; it is the active, voluntary exercise of agency in a
+            good cause.
+          </p>
+          <p>
+            <strong>How it shapes my decisions:</strong> Before any access
+            decision, deployment, or data export, I ask:
+            <em
+              >Am I being a faithful steward of what belongs to someone else —
+              and ultimately to God?</em
+            >
+            In the Heritage Vault refinement, this question is what drove the
+            separation of public records from restricted ordinance records.
+          </p>
+          <div class="practice">
+            <strong>In practice:</strong> Separate ZFS datasets for sacred data
+            · file-level encryption for ordinance records · consent checks
+            before deploying any model.
+          </div>
+        </div>
+
+        <div class="principle">
+          <h3>2. Integrity — "Do what is right in the unseen work."</h3>
+          <p class="scripture">Doctrine and Covenants 64:33–34 · Alma 37:6–7</p>
+          <p>
+            Much of system administration and AI engineering happens behind the
+            scenes — logs nobody reads, models nobody audits, scripts nobody
+            reviews. This principle holds that integrity is measured in the
+            invisible work. The Lord requires "the heart and a willing mind,"
+            and by small and simple things great things are brought to pass —
+            including the small, unseen, consistent choices that build or erode
+            trust.
+          </p>
+          <p>
+            <strong>How it shapes my decisions:</strong> I document work no one
+            may ever read. I report my own design errors honestly — including
+            the undersized backup volume I found and disclosed during the Week 4
+            refinement rather than quietly fixing it.
+          </p>
+          <div class="practice">
+            <strong>In practice:</strong> Audit logs and MFA on every admin
+            account · documentation as an act of honesty · honest reporting of
+            my own errors.
+          </div>
+        </div>
+
+        <div class="principle">
+          <h3>
+            3. Service — "Technical work is an act of love for my neighbor."
+          </h3>
+          <p class="scripture">Mosiah 2:17 · Matthew 25:40</p>
+          <p>
+            Every server I maintain and every AI tool I build ultimately touches
+            a real person — a user whose data I protect, a family whose network
+            I keep running, a student who relies on a system I administer. This
+            principle reframes technical excellence as a form of discipleship: I
+            serve my neighbor by doing my work well.
+          </p>
+          <p>
+            <strong>How it shapes my decisions:</strong> It shifts my focus from
+            "does this work?" to "does this serve the people who depend on it?"
+            In my teaching role, it meant designing a curriculum for 200
+            students with no prior exposure to technology. In my AI work, it
+            means building tools that expand access rather than restrict it.
+          </p>
+          <div class="practice">
+            <strong>In practice:</strong> Curriculum for 200+ students ·
+            open-source tools for nonprofit budgets · building access, not
+            restricting it.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="materials">
+      <div class="container">
+        <h2>Collected Materials by Theme</h2>
+
+        <h3 class="subhead">Theme 1 — Stewardship</h3>
+
+        <div class="material">
+          <span class="type">Scripture</span>
+          <h4>Doctrine and Covenants 58:26–28</h4>
+          <p>
+            <em
+              >"Men should be anxiously engaged in a good cause, and do many
+              things of their own free will... For the power is in them, wherein
+              they are agents unto themselves."</em
+            >
+          </p>
+          <p class="why">
+            <strong>Why it is meaningful:</strong> This is the anchor of my
+            capstone journey. As an IT professional, I am an "agent unto myself"
+            when I hold admin privileges or build AI models. This verse reminds
+            me that my agency is a gift meant for righteousness — I should
+            proactively use my skills to build secure, ethical systems, not wait
+            to be told.
+          </p>
+        </div>
+
+        <div class="material">
+          <span class="type">Scripture</span>
+          <h4>Alma 37:6–7</h4>
+          <p>
+            <em
+              >"By small and simple things are great things brought to
+              pass."</em
+            >
+          </p>
+          <p class="why">
+            <strong>Why it is meaningful:</strong> System administration and AI
+            engineering involve invisible, repetitive tasks — patching a server,
+            reviewing logs, cleaning data. This scripture reminds me that the
+            small, unseen details are exactly where great things are built.
+            Integrity in the invisible work matters most.
+          </p>
+        </div>
+
+        <div class="material">
+          <span class="type exp">Personal Experience</span>
+          <h4>The Hardware Maintenance Protocol</h4>
+          <p>
+            When I implemented the hardware maintenance protocol at Pi &amp;
+            Beads Academy, I took ownership of a problem no one had asked me to
+            solve. That proactive stewardship extended equipment lifespan by
+            40%.
+          </p>
+          <p class="why">
+            <strong>Why it is meaningful:</strong> Looking back, I see that as a
+            spiritual milestone: a moment where my technical skills and my
+            desire to be a faithful steward aligned. Stewardship is not what I
+            am told to do; it is what I notice needs doing and do.
+          </p>
+        </div>
+
+        <h3 class="subhead">Theme 2 — Integrity</h3>
+
+        <div class="material">
+          <span class="type talk">General Conference</span>
+          <h4>
+            Elder David A. Bednar — "Gather Together in One All Things in
+            Christ" (2018)
+          </h4>
+          <p>
+            The "rope" analogy: doctrine, principles, and practices woven
+            together into a single, unbreakable strand.
+          </p>
+          <p class="why">
+            <strong>Why it is meaningful:</strong> This image has shaped how I
+            see this entire course. My system administration skills and my
+            discipleship are not two separate ropes; they must be woven
+            together. A technically brilliant engineer who lacks integrity is a
+            weak strand.
+          </p>
+        </div>
+
+        <div class="material">
+          <span class="type talk">General Conference</span>
+          <h4>President Russell M. Nelson — "Make Time for the Lord"</h4>
+          <p>
+            A reminder that no matter how busy life becomes, the relationship
+            with the Lord comes first.
+          </p>
+          <p class="why">
+            <strong>Why it is meaningful:</strong> As I prepare for a demanding
+            career in AI and system administration, my technical ambitions must
+            never crowd out my spiritual priorities. Time with the Lord is what
+            recharges me for the work ahead — and it is the discipline that
+            keeps the two strands of the rope from fraying apart.
+          </p>
+        </div>
+
+        <div class="material">
+          <span class="type">Scripture</span>
+          <h4>3 Nephi 13:19–22</h4>
+          <p>
+            <em
+              >"Lay up for yourselves treasures in heaven... For where your
+              treasure is, there will your heart be also."</em
+            >
+          </p>
+          <p class="why">
+            <strong>Why it is meaningful:</strong> This passage was assigned for
+            the Week 5 reflection on keeping my eye single to God's will. It
+            asks me to examine where my treasure actually is — not where I say
+            it is. In a field that rewards visibility and speed, it reminds me
+            that the unseen work is the treasure.
+          </p>
+        </div>
+
+        <h3 class="subhead">Theme 3 — Service</h3>
+
+        <div class="material">
+          <span class="type">Scripture</span>
+          <h4>Mosiah 2:17</h4>
+          <p>
+            <em
+              >"When ye are in the service of your fellow beings ye are only in
+              the service of your God."</em
+            >
+          </p>
+          <p class="why">
+            <strong>Why it is meaningful:</strong> When I troubleshoot a network
+            outage or design an AI tool, it is easy to focus only on the code
+            and forget the people behind it. This verse reframes my technical
+            work as an act of service. Every secure server I maintain and every
+            clean script I write is a way of serving my neighbor.
+          </p>
+        </div>
+
+        <div class="material">
+          <span class="type exp">Personal Experience</span>
+          <h4>District Leader During My Mission</h4>
+          <p>
+            Leading and mentoring missionaries in the Nigeria Benin City Mission
+            taught me that leadership is about lifting others, not just managing
+            tasks.
+          </p>
+          <p class="why">
+            <strong>Why it is meaningful:</strong> That lesson applies directly
+            to IT leadership. Whether I am leading a team project or mentoring a
+            junior technician, I want to lead the way Christ did — with
+            patience, honesty, and a focus on the growth of the people I serve.
+          </p>
+        </div>
+
+        <div class="material">
+          <span class="type insight">Personal Insight</span>
+          <h4>The Internship Data Loss</h4>
+          <p>
+            During my internship, our team sent weekly reports to one member for
+            consolidation. When that member's laptop failed, the consolidated
+            data was lost — we recovered only because each of us had backed up
+            our own copies.
+          </p>
+          <p class="why">
+            <strong>Why it is meaningful:</strong> This taught me that service
+            includes foresight. Protecting other people's work is a form of
+            service, and preparation is an act of love. It also shaped my
+            discussion board contribution on data stewardship in the workplace.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="map">
+      <div class="container">
+        <h2>Reflection Map: How Faith Integrates with Professional Work</h2>
+        <div class="map-center">"Technical work is discipleship"</div>
+        <div class="map-grid">
+          <div class="map-card">
+            <h3>Stewardship → Access &amp; Privacy</h3>
+            <ul>
+              <li>Separate ZFS datasets for public vs. restricted data</li>
+              <li>File-level encryption for sacred records</li>
+              <li>Consent checks before deploying a model</li>
+            </ul>
+          </div>
+          <div class="map-card">
+            <h3>Integrity → The Unseen Work</h3>
+            <ul>
+              <li>Audit logs and MFA on admin accounts</li>
+              <li>Documentation no one may read</li>
+              <li>Honest reporting of my own errors</li>
+            </ul>
+          </div>
+          <div class="map-card">
+            <h3>Service → Accessibility</h3>
+            <ul>
+              <li>Curriculum for 200+ students</li>
+              <li>Open-source tools for nonprofits</li>
+              <li>Building access, not restricting it</li>
+            </ul>
+          </div>
+        </div>
+
+        <h3 class="subhead">Personal Warning Signs</h3>
+        <div class="warn-grid">
+          <div class="warn">
+            <h3>1. Rushing past the ethical question</h3>
+            <p>
+              When I am behind and tell myself "I'll think about the ethics
+              later," I have already begun to diverge. Ethics deferred is ethics
+              avoided.
+            </p>
+          </div>
+          <div class="warn">
+            <h3>2. Justifying a shortcut because no one will notice</h3>
+            <p>
+              The moment I measure rightness by whether it will be detected, my
+              integrity has slipped into performance.
+            </p>
+          </div>
+          <div class="warn">
+            <h3>3. Separating "work me" from "Sunday me"</h3>
+            <p>
+              When I catch myself thinking my faith is relevant only in church
+              settings, that is the clearest sign my rope is fraying into two
+              strands.
+            </p>
+          </div>
+          <div class="warn">
+            <h3>4. Hiding a concern instead of voicing it</h3>
+            <p>Silence under pressure is not neutrality — it is complicity.</p>
+          </div>
+        </div>
+
+        <div class="realign">
+          <h3>Strategies for Realignment</h3>
+          <ul>
+            <li>
+              A five-minute written check before any deployment or data
+              decision: Who is affected? Who bears the risk? Did they consent?
+            </li>
+            <li>
+              A weekly portfolio entry connecting one technical decision to one
+              principle.
+            </li>
+            <li>
+              Monthly mentor conversation where I report honestly on where I
+              fell short.
+            </li>
+            <li>Returning to the temple when I feel distance growing.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="nearmiss">
+      <div class="container">
+        <h2>Near-Miss Log</h2>
+        <p class="lede">
+          Added during the Week 5 portfolio review, which found that I had named
+          my warning signs but kept no record of actually noticing them. This
+          log makes the alignment strategy visible rather than aspirational.
+        </p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Situation</th>
+                <th scope="col">Warning Sign I Noticed</th>
+                <th scope="col">What I Did</th>
+                <th scope="col">Principle</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  Grader feedback on the Project Refinement: my submission was a
+                  general checklist rather than a refinement of a specific
+                  project.
+                </td>
+                <td>
+                  Rushing past the ethical question — I had treated ethics as a
+                  deliverable rather than a design decision.
+                </td>
+                <td>
+                  Rebuilt the refinement around seven named changes to one
+                  specific proposal (Heritage Vault 2.0), documenting each
+                  change and its ethical reason.
+                </td>
+                <td>Integrity</td>
+              </tr>
+              <tr>
+                <td>
+                  Week 5 portfolio review found that several entries
+                  <em>asserted</em> a scripture connection without showing how
+                  the scripture changed a decision.
+                </td>
+                <td>
+                  Separating "work me" from "Sunday me" — I had written the
+                  right words without tracing the actual effect.
+                </td>
+                <td>
+                  Revised each principle entry to include a "How it shapes my
+                  decisions" section, and added this near-miss log.
+                </td>
+                <td>Integrity</td>
+              </tr>
+              <tr>
+                <td>
+                  Usability testing showed my strongest professional work was
+                  nearly invisible without navigation.
+                </td>
+                <td>
+                  Hiding a concern instead of voicing it — I had never asked
+                  anyone to test what I built, because I assumed it was clear.
+                </td>
+                <td>
+                  Ran three rounds of usability testing, added sticky
+                  navigation, and restructured the page for a reader rather than
+                  a writer.
+                </td>
+                <td>Service</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id="review">
+      <div class="container">
+        <h2>Portfolio Review &amp; Enhancement Plan</h2>
+        <div class="finding working">
+          <h3>Findings — What Is Working</h3>
+          <ul>
+            <li>
+              <strong>Clear thematic structure.</strong> Every item maps to
+              Stewardship, Integrity, or Service, giving the portfolio a visible
+              through-line.
+            </li>
+            <li>
+              <strong>Diverse material types.</strong> Scripture, general
+              conference talks, personal experience, and personal insight.
+            </li>
+            <li>
+              <strong>Genuine professional connection.</strong> Each entry links
+              to system administration or AI engineering rather than sitting in
+              a spiritual silo.
+            </li>
+          </ul>
+        </div>
+        <div class="finding enhance">
+          <h3>Findings — Areas for Enhancement (and What Was Done)</h3>
+          <ul>
+            <li>
+              <strong>Chronological depth was thin.</strong> Added the mission
+              district-leader experience and the internship data-loss experience
+              to extend the arc beyond this course.
+              <em>Further work: add one family milestone.</em>
+            </li>
+            <li>
+              <strong>"Unseen work" needed a concrete example.</strong> Added
+              the Heritage Vault refinement as the concrete instance where
+              integrity shaped a real deliverable.
+            </li>
+            <li>
+              <strong>No record of near-misses.</strong> Added the Near-Miss Log
+              above, with three documented instances.
+            </li>
+            <li>
+              <strong
+                >Scripture connections were asserted, not demonstrated.</strong
+              >
+              Revised every principle entry to include a "How it shapes my
+              decisions" section tracing the actual effect.
+            </li>
+          </ul>
+        </div>
+        <p class="lede" style="margin-top: 20px">
+          <strong>Integration goal:</strong> The final portfolio should read as
+          a single coherent narrative of one disciple-engineer growing in both
+          dimensions — not two files stapled together. This page and the
+          <a href="index.html" style="color: var(--blue)"
+            >Professional Growth Portfolio</a
+          >
+          are deliberately designed to read as one story with two doors.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2>References</h2>
+        <div class="refs">
+          <p>
+            Bednar, D. A. (2018, November).
+            <em>Gather together in one all things in Christ</em>. Ensign or
+            Liahona.
+            <a
+              href="https://www.churchofjesuschrist.org/study/general-conference/2018/10/gather-together-in-one-all-things-in-christ"
+              >churchofjesuschrist.org</a
+            >
+          </p>
+          <p>
+            Nelson, R. M. (2021, November). <em>Make time for the Lord</em>.
+            Ensign or Liahona.
+            <a
+              href="https://www.churchofjesuschrist.org/study/general-conference/2021/10/47nelson"
+              >churchofjesuschrist.org</a
+            >
+          </p>
+          <p>
+            The Church of Jesus Christ of Latter-day Saints. (n.d.).
+            <em>Doctrine and Covenants 58:26–28</em>.
+            <a
+              href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/58"
+              >churchofjesuschrist.org</a
+            >
+          </p>
+          <p>
+            The Church of Jesus Christ of Latter-day Saints. (n.d.).
+            <em>Doctrine and Covenants 64:33–34</em>.
+            <a
+              href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/64"
+              >churchofjesuschrist.org</a
+            >
+          </p>
+          <p>
+            The Church of Jesus Christ of Latter-day Saints. (n.d.).
+            <em>Mosiah 2:17</em>.
+            <a
+              href="https://www.churchofjesuschrist.org/study/scriptures/bofm/mosiah/2"
+              >churchofjesuschrist.org</a
+            >
+          </p>
+          <p>
+            The Church of Jesus Christ of Latter-day Saints. (n.d.).
+            <em>Alma 37:6–7</em>.
+            <a
+              href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/37"
+              >churchofjesuschrist.org</a
+            >
+          </p>
+          <p>
+            The Church of Jesus Christ of Latter-day Saints. (n.d.).
+            <em>3 Nephi 13:19–22</em>.
+            <a
+              href="https://www.churchofjesuschrist.org/study/scriptures/bofm/3-ne/13"
+              >churchofjesuschrist.org</a
+            >
+          </p>
+          <p>
+            Hurley, C. (n.d.).
+            <em
+              >Climbing your own Mount Sinai: The rewards of faith and
+              effort</em
+            >
+            [Video]. Ensign College.
+          </p>
+          <p>
+            Morrison, I. K. (n.d.).
+            <em>Lessons from the unexpected path</em> [Video]. Ensign College.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>Chiedozie David Nnam &mdash; Spiritual Progression Portfolio</p>
+        <p>
+          <a href="index.html">Professional Growth Portfolio</a> &nbsp;|&nbsp;
+          <a href="mailto:chiedozied9@gmail.com">chiedozied9@gmail.com</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
